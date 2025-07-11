@@ -23,6 +23,7 @@ Available styles:
   rainbow    - Full spectrum colors
   helvetica  - Clean, minimal, black/white/gray
   codc       - Cult of the Dead Cow hacker aesthetic
+  topgun     - Military/aviation BBS aesthetic, bright contrasting colors
 
 Examples:
   %(prog)s README.md
@@ -122,7 +123,8 @@ def get_style_description(style_name):
         'edgelord': 'Black, red, dark colors, gothic feel',
         'rainbow': 'Full spectrum colors',
         'helvetica': 'Clean, minimal, black/white/gray',
-        'codc': 'Cult of the Dead Cow hacker aesthetic'
+        'codc': 'Cult of the Dead Cow hacker aesthetic',
+        'topgun': 'Military/aviation BBS aesthetic, bright contrasting colors'
     }
     return descriptions.get(style_name, 'Unknown style')
 

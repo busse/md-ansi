@@ -151,6 +151,21 @@ class CODCTheme(StyleTheme):
         self.border_color = ANSIColors.BRIGHT_GREEN
 
 
+class TopGunTheme(StyleTheme):
+    """Top Gun BBS theme - military/aviation aesthetic with bright contrasting colors"""
+    def __init__(self):
+        super().__init__("topgun")
+        self.header_color = ANSIColors.BRIGHT_CYAN + ANSIColors.BOLD
+        self.text_color = ANSIColors.BRIGHT_WHITE
+        self.emphasis_color = ANSIColors.BRIGHT_YELLOW + ANSIColors.ITALIC
+        self.strong_color = ANSIColors.BRIGHT_BLUE + ANSIColors.BOLD
+        self.code_color = ANSIColors.BRIGHT_WHITE + ANSIColors.BG_BLUE
+        self.link_color = ANSIColors.BRIGHT_CYAN + ANSIColors.UNDERLINE
+        self.list_color = ANSIColors.BRIGHT_YELLOW
+        self.quote_color = ANSIColors.BRIGHT_BLUE + ANSIColors.ITALIC
+        self.border_color = ANSIColors.BRIGHT_WHITE
+
+
 # Theme registry
 THEMES = {
     'beach': BeachTheme(),
@@ -158,7 +173,8 @@ THEMES = {
     'edgelord': EdgelordTheme(),
     'rainbow': RainbowTheme(),
     'helvetica': HelveticaTheme(),
-    'codc': CODCTheme()
+    'codc': CODCTheme(),
+    'topgun': TopGunTheme()
 }
 
 
