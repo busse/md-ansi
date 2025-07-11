@@ -28,6 +28,7 @@ Examples:
   %(prog)s README.md
   %(prog)s --style vaporwave document.md
   %(prog)s --style codc --output output.ans input.md
+  %(prog)s --max --style edgelord wild_document.md
         '''
     )
     
@@ -47,6 +48,12 @@ Examples:
     parser.add_argument(
         '--output', '-o',
         help='Output file (default: stdout)'
+    )
+    
+    parser.add_argument(
+        '--max',
+        action='store_true',
+        help='Enhanced formatting with ASCII art headers and wilder colors'
     )
     
     parser.add_argument(
@@ -88,7 +95,7 @@ Examples:
     
     # Convert
     try:
-        converter = MarkdownToANSIConverter(args.style)
+        converter = MarkdownToANSIConverter(args.style, max_mode=args.max)
         result = converter.convert(content)
     except Exception as e:
         print(f"Error converting content: {e}", file=sys.stderr)
