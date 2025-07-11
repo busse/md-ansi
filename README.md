@@ -25,6 +25,9 @@ md-ansi README.md
 # Use a specific style
 md-ansi --style vaporwave document.md
 
+# Use max mode for enhanced formatting with ASCII art headers
+md-ansi --max --style edgelord document.md
+
 # Save to file
 md-ansi --style codc --output output.ans input.md
 
@@ -45,7 +48,7 @@ cat input.md | md-ansi --style edgelord -
 
 ```
 usage: md-ansi [-h] [--style {beach,vaporwave,edgelord,rainbow,helvetica,codc}] 
-               [--output OUTPUT] [--list-styles] [--version] [input]
+               [--output OUTPUT] [--max] [--list-styles] [--version] [input]
 
 Convert Markdown files to BBS-style ANSI documents
 
@@ -57,19 +60,21 @@ options:
   --style STYLE         Style theme to use (default: beach)
   --output OUTPUT, -o OUTPUT
                         Output file (default: stdout)
+  --max                 Enhanced formatting with ASCII art headers and wilder colors
   --list-styles         List available styles and exit
   --version             show program's version number and exit
 ```
 
 ## Features
 
-- **Headers** - Styled with decorative borders
-- **Text formatting** - Bold, italic, inline code
-- **Links** - Underlined and colored
-- **Lists** - Bullet points and numbered lists with nesting
-- **Code blocks** - Syntax-highlighted with language labels
-- **Blockquotes** - Formatted with side borders
-- **Horizontal rules** - Decorative separators
+- **Headers** - Styled with decorative borders, ASCII art in max mode
+- **Text formatting** - Bold, italic, inline code with enhanced effects in max mode
+- **Links** - Underlined and colored, with blinking effects in max mode
+- **Lists** - Bullet points and numbered lists with nesting, enhanced bullets in max mode
+- **Code blocks** - Syntax-highlighted with language labels, enhanced borders in max mode
+- **Blockquotes** - Formatted with side borders, variable characters in max mode
+- **Horizontal rules** - Decorative separators, rainbow gradients in max mode
+- **Max mode** - Enhanced formatting with ASCII art headers and wilder colors
 - **Minimal dependencies** - Uses only Python standard library
 
 ## Examples
