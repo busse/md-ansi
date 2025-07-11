@@ -43,11 +43,12 @@ cat input.md | md-ansi --style edgelord -
 - **rainbow** - Full spectrum colors
 - **helvetica** - Clean, minimal, black/white/gray
 - **codc** - Cult of the Dead Cow hacker aesthetic
+- **topgun** - Military/aviation BBS aesthetic, bright contrasting colors
 
 ### Command Line Options
 
 ```
-usage: md-ansi [-h] [--style {beach,vaporwave,edgelord,rainbow,helvetica,codc}] 
+usage: md-ansi [-h] [--style {beach,vaporwave,edgelord,rainbow,helvetica,codc,topgun}] 
                [--output OUTPUT] [--max] [--list-styles] [--version] [input]
 
 Convert Markdown files to BBS-style ANSI documents
@@ -96,6 +97,9 @@ Clean, minimal black and white styling for professional documents.
 
 ### CODC Style
 Green-on-black hacker aesthetic inspired by the Cult of the Dead Cow.
+
+### Top Gun Style
+Military/aviation BBS aesthetic with bright contrasting colors reminiscent of 1990s Top Gun themed bulletin board systems.
 
 ## License
 
