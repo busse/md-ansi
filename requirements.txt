@@ -1,0 +1,2 @@
+# No additional requirements - using only standard library
+# This keeps dependencies minimal as requested
